@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+
+$.getJSON("library.json",function(data){
+
+$('.result').html('<img src="' + data.library1name.photos[1].url + '">' + '<br>' + data.library1name.photos[1].title + ' - ' + data.library1name.photos[1].date);
+});
+</script>
+<a href="index.html">Return to Library</a>
+<br>
+<h1>Simple Photo Library</h1>
+<br>
+<a href="#">Previous</a>
+<a href="lib1.html">Return to Album</a>
+<a href="l1pic2.html">Next</a>
+<p class="result"></p>
+</body>
+</html>

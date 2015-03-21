@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
+	</head>
+	<body>
+	<script>
+    $.getJSON("library.json", function(data){
+		$('.result').html('<a href="lib1.html">' + data.library1name.title +'</a>' + '<br>' + '<a href="lib2.html">' + data['2ndlibraryname'].title + '</a>');
+
+});
+
+
+</script>
+
+<h1>Albums:</h1>
+<p id="title1" class="result"></p>
+<p id="title2" class="result2"></p>
+<div></div>
+</body>
+
